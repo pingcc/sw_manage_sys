@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.sw.manage.modules.books.mapper.SwBooksManageMapper">
+    <select id="queryBooksManageList" resultType="org.jeecg.sw.manage.modules.books.vo.SwBooksManageVO">
+    select * from (
+    SELECT
+    sbm.id,
+    sbm.books_name,
+    sbm.books_desc,
+    sbm.books_code,
+    sbm.books_bar_code,
+    sbm.is_sale,
+    sbm.create_time,
+    sbm.is_deleted,
+    sbt.books_pos_code,
+    sbt.book_sale,
+    sbt.days,
+    sbt.borrow_by,
+    sbt.borrow_name,
+    sbt.borrow_time
+    FROM
+    sw_books_manage sbm
+    JOIN sw_books_attr sbt ON sbt.books_id = sbm.id
+    ) t
+      ${ew.customSqlSegment}
+    </select>
+
+</mapper>

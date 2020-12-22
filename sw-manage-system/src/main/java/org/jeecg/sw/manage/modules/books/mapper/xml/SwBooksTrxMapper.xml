@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.sw.manage.modules.books.mapper.SwBooksTrxMapper">
+    <select id="queryBooksTrxList" resultType="org.jeecg.sw.manage.modules.books.vo.SwBooksTrxVo">
+    select * from (
+   SELECT
+	sbw.books_name,
+	sbw.books_code, sbt.*
+    FROM
+	`sw_books_trx` sbt
+	JOIN sw_books_manage sbw
+	on sbw.id = sbt.books_id
+    ) t
+      ${ew.customSqlSegment}
+    </select>
+</mapper>

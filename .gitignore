@@ -1,0 +1,8 @@
+/target/
+/.idea/
+*.iml
+rebel.xml
+/Sw-base-application/target/
+/Sw-base-common/target/
+/logs/
+/sw-manage-system/target/
