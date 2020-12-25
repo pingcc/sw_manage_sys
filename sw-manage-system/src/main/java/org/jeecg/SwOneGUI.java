@@ -5,7 +5,7 @@ import org.jeecgframework.codegenerate.window.CodeWindow;
 /**
  * @Title: 单表代码生成器入口
  * 【 GUI模式已弃用，请转移Online模式进行代码生成 】
- * @Author 张代浩
+ * @Author 张代
  * @Version:V1.0.1
  */
 public class SwOneGUI {
