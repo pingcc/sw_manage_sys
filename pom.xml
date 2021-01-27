@@ -359,7 +359,11 @@
             <version>1.7.0</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
+            <version>3.0.1</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

@@ -127,20 +127,20 @@ spring:
         connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
       datasource:
         master:
-          url: jdbc:mysql://47.107.105.131:3306/sw_base_boot?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&serverTimezone=UTC
-          username: root
-          password: astar123554
+          url: ENC(MIUnJfjEXL6Pt515WEmFF9cMkXPm1iJw3HMDqSTaxfYmtbedrsiUEBTyIMqmcDQXX10SDSDMNBK3zMCGKqcFOsTv5Qj6A+e6sXoQF7YeawXns5bRyoDBkvwWPR5NqvFhXI7Jc5eizU5ZWKPH2LJ44RieW8AEcz/Zr/EZYdXUJbI5F9AD4a6Arb42jigY8jO4PCd3sVprzBkTTA8CTHoNGMrN8bHYMY6nnRX5bOzWQJtjfU/V1vgJMlRa3qqw6oZ2/1rXSB4Phyc=)
+          username: ENC(UR8Zyx4g0X6Y2cvI3dTwdw==)
+          password: ENC(5kvuCmNNhr28EtYc2T7Bfu7TE7nvBvPZ)
           driver-class-name: com.mysql.cj.jdbc.Driver
           # 多数据源配置
         sw-manage-datasource:
-          url: jdbc:mysql://47.107.105.131:3306/sw_manage_boot?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&serverTimezone=UTC
-          username: root
-          password: astar123554
+          url: ENC(BD8HWpiaOwymHyW23myjCJD4GXsZnJsaAxe0Bw+azAXUngE9XHQkmHDNVHCgGAkjx9agA9WONWI/Tf/5FYNZouZe6L/GtUdncSEhKdTKTkitgRsDAmdfw4KpS8Jkzn1eKF23siFJSXGpwmAKhGCQRP+bX8JMmZ5a8aRdgoJn06b2YflV4962U3zyC8XrIW24vbU7VU9H/gpI6rU4A86s3vlEF+S+9YIIj7+0ORdVzh40minnXkstdoRkidMCeQEllYmDmVQlzLs=)
+          username: ENC(UR8Zyx4g0X6Y2cvI3dTwdw==)
+          password: ENC(5kvuCmNNhr28EtYc2T7Bfu7TE7nvBvPZ)
           driver-class-name: com.mysql.cj.jdbc.Driver
   #redis 配置
   redis:
     database: 0
-    host: 47.107.105.131
+    host: ENC(9tsKt0a9QRLT0Ib40VeHllchdGXUiEY0)
     lettuce:
       pool:
         max-active: 8   #最大连接数据库连接数,设 0 为没有限制
@@ -148,7 +148,7 @@ spring:
         max-wait: -1ms  #最大建立连接等待时间。如果超过此时间将接到异常。设为-1表示无限制。
         min-idle: 0     #最小等待连接中的数量,设 0 为没有限制
       shutdown-timeout: 100ms
-    password: 123554
+    password: ENC(nNYPInIqapZD26/Ek1ZrBQ==)
     port: 6379
 #mybatis plus 设置
 mybatis-plus:
